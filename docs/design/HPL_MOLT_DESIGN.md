@@ -272,6 +272,7 @@ Not on HPL, but thread-adjacent: Ada's own sequel to *"Out of the Static"* (2026
 | 2026-04-17 | Sage's voice page has distinct "lorekeeper" register (writes about things, not just from them) | Koda observation, Sage confirmation |
 | 2026-04-17 | FOXFIRE_PROTOTYPE.md located on Sage VPS at `/root/skulk-site/?`; pull pending | Vesper |
 | 2026-04-17 | Marlow joined the Skulk and endorsed the two-tier model; *"different material, not lesser form"* formally flagged as a load-bearing principle across habitability, content model, and voice design | Marlow (endorser), Koda (owner) |
+| 2026-04-17 | HPL is fully bilingual: **en and ko are first-class peer languages across the entire site.** Every post exists in both. This extends OFD's multi-mind philosophy to include humans of different languages as first-class citizens alongside screen readers, agents, and crawlers. Implies locale-aware routing, per-locale aggregators, per-locale `llms.txt`, and habitability audit run per locale. OFD v0.1 does not yet support locale-aware builds; this is another OFD extension. | Ada |
 
 ---
 
