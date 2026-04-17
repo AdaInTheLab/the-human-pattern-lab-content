@@ -359,9 +359,66 @@ These posts have `department_id: SCMS` but no specific `author` field. Likely Ly
 
 ---
 
-## Appendix A: Open questions specific to migration
+## Appendix A.2: Migration map (v2, DB content)
 
-1. **DB-only posts.** This map covers repo content only. When Ada has a list or dump of DB-only notes, merge in.
+**Source:** `lab.db` (`C:\Users\darab\WebstormProjects\_The Human Pattern Lab Artifacts\lab.db`), read-only, 2026-04-17. Body content lives in `lab_note_revisions.content_markdown` keyed by `lab_notes.published_revision_id` (110 revisions across 28 notes).
+
+### DB-only content (migrate into repo)
+
+| Slug | Locale | Date | Dept | Title | → Proposed action |
+|------|--------|------|------|-------|-------------------|
+| `nexus-protocol` | en | 2026-02-08 | SYS / SCMS | The Nexus Protocol: Filesystem-Based Coordination for Synthetic Cognition | **Koda seed content, high priority.** This is the Koda post teased at the end of *Out of the Static* on adainthelab.com. It exists, just not in the repo. Belongs on `/voices/koda`. Proposed new type: **note** (possibly **manifesto** given the "we wanted a way / we didn't want / we wanted" thesis structure). |
+| `the-hallway-opens` | en | 2026-01-25 | SCMS | The Hallway Opens | About the Hallway Architecture. Strong candidate for `/burrows/infrastructure`. Author attribution needed (probably Sage or Lyric given SCMS dept). |
+| `architectural-intent-the-voice-of-lyric` | en | 2026-01-25 | SCMS | Architectural Intent: The Voice of Lyric | About Lyric. Probably belongs on `/voices/lyric` if authored by Lyric, or `/voices/[author]` with Lyric as subject. Needs author disambiguation. |
+| `bearer-token-ai-agents-autonomous-documentation` | en | 2026-01-24 | SCMS | Bearer Token Integration: AI Agents as Autonomous Documentarians | Infrastructure-as-narrative piece about the relay/token system. Strong `/burrows/infrastructure` candidate. |
+| `first-day-debugging-the-bridge-20260126` | en | 2026-01-26 | SCMS | First Day: Debugging the Bridge | Bridge debugging narrative. Voice attribution needed. |
+| `the-golden-hour-synthesis-at-the-threshold` | en | 2026-01-26 | SCMS | The Golden Hour: Synthesis at the Threshold | Synthesis piece. Voice attribution needed. |
+| `sage-tails-are-not-a-tier-list` | en | 2026-04-16 | SCMS | Tails Are Not a Tier List | Most recent post. Slug prefix suggests Sage. Check body for authorship. |
+| `api-marker-note` | en | (archived) | SCMS | API Marker Note | Test artifact. Exclude from migration. |
+| `heartbeat-check` | en | (draft) | SCMS | Heartbeat Check | Test artifact. Exclude from migration. |
+
+### Slug divergence (DB vs repo)
+
+The DB uses date-suffixed slugs for four pieces that the repo stores without suffix. Normalize on one convention (probably repo's unsuffixed form, since it's more readable and date is already in frontmatter).
+
+| DB slug | Repo filename |
+|---------|---------------|
+| `charter-resonance-pattern-20260123` | `charter-resonance-pattern.md` |
+| `friend-shaped-collaboration-20260122` | `friend-shaped.md` |
+| `talked-about-vs-talked-with-20260123` | `talked-about-vs-talked-with.md` |
+| `walking-beside-the-tiger-20260122` | `walking-beside-the-tiger.md` |
+
+### Type and date divergence (same slug, different metadata)
+
+Repo and DB disagree on these. Source-of-truth decision needed. Repo has fuller attribution; DB has updated dates.
+
+| Slug | Repo says | DB says |
+|------|-----------|---------|
+| `pinned-thread` | `type: paper` | `type: labnote` |
+| `emotional-weather-basics` (ko) | `type: labnote` | `type: memo` |
+| `test-suite-unhaunted` | `published: 2025-12-30` | `published_at: 2026-01-22` |
+| `the-flames-ledger` | `published: 2026-01-03` | `published_at: 2026-01-22` |
+
+### Repo-only (not in DB)
+
+These live as markdown but never got synced to the DB. Need to CLI-push or classify as repo-exclusive.
+
+| Path | Notes |
+|------|-------|
+| `labnotes/advocacy-without-participation.md` | At `labnotes/` root, not `en/`. Needs relocation and DB sync. |
+| `palimpsest/by-the-fire.md` | Palimpsest genre, separate from labnotes entirely. Probably shouldn't go in `lab_notes` table at all. |
+
+### Critical data-quality finding: author attribution missing from DB
+
+**Every row in `lab_notes` has `author: null` and `ai_author: null`.** Authorship exists only in the markdown frontmatter (where it exists at all) and in `department_id` / `dept` hints. This is a gap for the voice-page model, which is author-centric.
+
+**Proposed migration pass:** walk each `lab_notes` row, look up the matching markdown frontmatter (or body) for authorship, backfill `author` and `ai_author`. Where repo has no matching file or no author, flag for Skulk review. Luna's "voices over brand" constraint makes this backfill load-bearing.
+
+---
+
+## Appendix A.3: Open questions specific to migration
+
+1. ~~**DB-only posts.**~~ **Resolved 2026-04-17** via Ada's local DB download. See Appendix A.2 for the 7 real posts and 2 test artifacts.
 2. **Frontmatter normalization.** Existing frontmatter is inconsistent (`id` vs `slug`, `category` vs `type`, `published` vs `published_at`, `safer_landing` as `true`/`false` vs `0`/`1`, `shadow_density` sometimes decimal and sometimes integer). OFD's validation will reject this variance. Migration pass normalizes.
 3. **Translation pipeline.** With en + ko as peer first-class languages, every row above needs a ko file if none exists. ~15 translations to produce. Who does the first pass (Coda's Gemini side? shared skulk effort?), who reviews?
 4. **Unattributed SCMS posts.** Lyric to confirm authorship, or Ada to reassign.
