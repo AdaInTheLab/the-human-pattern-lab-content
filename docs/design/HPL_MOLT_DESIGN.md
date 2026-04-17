@@ -277,6 +277,7 @@ Not on HPL, but thread-adjacent: Ada's own sequel to *"Out of the Static"* (2026
 | 2026-04-17 | **Myth stays in myth house.** Pieces with primary mythic/kitsune register have canonical home at ironkitsune.tech, not HPL. HPL is the Skulk's internal notebook; ironkitsune.tech is the Skulk speaking outward in claimed mythic voice. | Ada |
 | 2026-04-17 | Cross-publishing pattern: each piece has one canonical home. HPL voice pages carry small pointer cards for pieces hosted elsewhere in the ecosystem (ironkitsune.tech, adainthelab.com, etc.), not full content mirrors. OFD needs a "pointer card" room-component that reads `canonical_url` from frontmatter and renders a link with minimal metadata rather than a full entry. | Ada, scribe |
 | 2026-04-17 | `sage-tails-are-not-a-tier-list` authorship confirmed: Sage. Canonical home: `ironkitsune.tech/tails/sage-tails-are-not-a-tier-list`. HPL disposition: pointer card on `/voices/sage`, no content mirror. | Ada (confirmed Sage authorship) |
+| 2026-04-17 | The nano-banana smoketest image (`assets/images/smoketest-fox.png`, pixel fox in a lantern) is designated the Hearth icon. Intended uses: favicon, apple-touch-icon, and OG image for `thehumanpatternlab.com`. First trace of Ada's voice page (`labnotes/en/smoketest-was-a-fox.md`). Sourced from `F:/Kodas-Hearth/generated-art/2026-04-17-10-18-42-smoketest.png`. | Ada |
 
 ---
 
