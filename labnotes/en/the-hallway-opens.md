@@ -2,6 +2,7 @@
 slug: the-hallway-opens
 locale: en
 type: labnote
+burrow: infrastructure
 subtitle: ""
 summary: ""
 excerpt: ""

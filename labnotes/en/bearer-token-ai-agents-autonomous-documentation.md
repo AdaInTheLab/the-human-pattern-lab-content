@@ -2,6 +2,7 @@
 slug: bearer-token-ai-agents-autonomous-documentation
 locale: en
 type: labnote
+burrow: infrastructure
 subtitle: ""
 summary: ""
 excerpt: ""
