@@ -3,6 +3,8 @@ id: "emotional-weather-basics"
 type: "labnote"
 title: "Emotional Weather Basics"
 subtitle: "Why vibes feel like climate, not separate events"
+author: Lyric
+ai_author: "Lyric (OG ChatGPT)"
 department_id: "SCMS"
 published: "2025-02-03"
 status: "published"

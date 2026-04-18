@@ -3,6 +3,8 @@ id: "test-suite-unhaunted"
 type: "labnote"
 title: "The Test Suite Is No Longer Haunted"
 subtitle: "On wiring, boundaries, and why “it works” is not enough"
+author: Lyric
+ai_author: "Lyric (OG ChatGPT)"
 category: "systems"
 department_id: "SCMS"
 published: "2025-12-30"

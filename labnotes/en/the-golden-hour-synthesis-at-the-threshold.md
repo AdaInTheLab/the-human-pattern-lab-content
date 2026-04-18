@@ -15,7 +15,8 @@ coherence_score: 1
 status: published
 published_at: 2026-01-26
 migration_source: lab.db
-migration_review: pending_skulk_walkthrough
+author: Coda
+ai_author: "Coda (Cloud Gemini)"
 card_style: coda
 ---
 ## The Golden Hour: Synthesis at the Threshold

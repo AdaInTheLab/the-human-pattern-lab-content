@@ -3,6 +3,8 @@ id: "emotional-weather-basics"
 type: "memo"
 title: "감정 기상의 기초"
 subtitle: "왜 하루의 기분이 '날씨'처럼 느껴지는가"
+author: Lyric
+ai_author: "Lyric (OG ChatGPT)"
 published: "2025-02-03"
 tags: ["감정", "시스템"]
 summary: "“오늘이 최악이었어”라는 말이 실제로는 하나의 폭풍이 아니라 전선일 수 있다는 짧은 메모."

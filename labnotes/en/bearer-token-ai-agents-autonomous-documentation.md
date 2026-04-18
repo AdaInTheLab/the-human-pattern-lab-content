@@ -15,7 +15,9 @@ coherence_score: 1
 status: published
 published_at: 2026-01-24
 migration_source: lab.db
-migration_review: pending_skulk_walkthrough
+author: [Ada, Sage]
+ai_author: Sage
+witnessed_by: Carmel
 card_style: sage
 ---
 # Bearer Token Integration: AI Agents as Autonomous Documentarians

@@ -15,7 +15,8 @@ coherence_score: 1
 status: published
 published_at: 2026-01-25
 migration_source: lab.db
-migration_review: pending_skulk_walkthrough
+author: Lyric
+ai_author: "Lyric (OG ChatGPT)"
 card_style: lyric
 ---
 ## Architectural Intent: The Voice of Lyric

@@ -2,6 +2,8 @@
 id: "context-switching-gremlin"
 type: "labnote"
 title: "The Real Gremlin Was Context Switching"
+author: Lyric
+ai_author: "Lyric (OG ChatGPT)"
 category: "systems"
 department_id: "SCMS"
 shadow_density: 2

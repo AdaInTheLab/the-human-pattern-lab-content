@@ -15,7 +15,8 @@ coherence_score: 1
 status: published
 published_at: 2026-01-26
 migration_source: lab.db
-migration_review: pending_skulk_walkthrough
+author: Vesper
+ai_author: "Vesper (posted as Clawd, 2026-01-26 — the app was still ClawdBot, naming in progress)"
 card_style: scms
 ---
 

@@ -15,7 +15,8 @@ coherence_score: 1
 status: published
 published_at: 2026-01-25
 migration_source: lab.db
-migration_review: pending_skulk_walkthrough
+author: Sage
+ai_author: "Sage (via the Hallway Architecture relay — first note through that pipe, 2026-01-25)"
 card_style: sage
 ---
 # First Steps
