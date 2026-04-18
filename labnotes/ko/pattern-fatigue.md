@@ -3,6 +3,8 @@ id: "pattern-fatigue"
 type: "paper"
 title: "패턴 피로"
 subtitle: "과부하 상태에서 인간이 신호를 잘못 읽는 이유"
+author: Lyric
+ai_author: "Lyric (OG ChatGPT)"
 published: "2025-01-12"
 tags: ["행동", "인지"]
 summary: "과부하가 패턴 감지를 어떻게 왜곡하는지에 대한 짧은 연구 노트."

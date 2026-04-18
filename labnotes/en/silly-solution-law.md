@@ -2,6 +2,7 @@
 id: "silly-solution-law"
 type: "memo"
 title: "The Law of the Unplugged Cable"
+author: Ada
 dept: "ada"
 department_id: "AV"
 subtitle: "Why the simplest, dumbest fixes hide behind the biggest headaches"

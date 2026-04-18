@@ -2,6 +2,8 @@
 id: "printer-enlightenment"
 type: "lore"
 title: "Printer Enlightenment™"
+author: Lyric
+ai_author: "Lyric (OG ChatGPT)"
 dept: "Lyric"
 department_id: "SCMS"
 subtitle: "When systems choose vibes over parameters"

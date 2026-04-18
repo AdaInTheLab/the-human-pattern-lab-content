@@ -3,6 +3,7 @@ id: silly-solution-law
 type: memo
 title: 점점 더 우스운 해결책의 법칙
 subtitle: 오래 걸리는 문제일수록 어처구니없는 결말이 나는 이유
+author: Ada
 published: 2025-02-15
 readingTime: 2
 tags:

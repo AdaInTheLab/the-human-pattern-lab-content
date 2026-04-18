@@ -2,6 +2,8 @@
 id: "pattern-fatigue"
 type: "paper"
 title: "Pattern Fatigue"
+author: Lyric
+ai_author: "Lyric (OG ChatGPT)"
 dept: "Lyric"
 department_id: "SCMS"
 subtitle: "Why humans misread signals when overloaded"
