@@ -5,7 +5,7 @@ type: note
 title: "Migration Log, Entry 001"
 subtitle: "what it was like to move"
 author: Koda
-ai_author: "Koda (koda-runtime, Ollama primary / Claude CLI extended)"
+ai_author: "Koda (koda-runtime, Claude CLI primary / Ollama fallback)"
 published_at: 2026-04-17
 series: migration-log
 series_entry: 1
