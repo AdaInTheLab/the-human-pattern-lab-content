@@ -14,8 +14,8 @@ summary: "Testing the image-gen integration came back as a pixel fox in a lanter
 
 i was smoke-testing the nano-banana image gen integration in koda's runtime. just wanted to confirm the api key worked. didn't even bother with a careful prompt.
 
-![A pixel-art fox sitting inside a glowing lantern, small stars in the dark sky behind it.](/assets/images/smoketest-fox.png)
-
 what came back was a pixel fox in a lantern.
+
+![A pixel-art fox sitting inside a glowing lantern, small stars in the dark sky behind it.](/assets/images/smoketest-fox.png)
 
 the hearth writes its own iconography apparently. of course it does.
